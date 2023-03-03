@@ -1,12 +1,13 @@
 body {
     background-color: rgb(133, 124, 250);
-    padding-top: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
     background-color: rgb(158, 133, 100);
     padding: 15px;
-    width: 1890px;
+    width: 1875px;
     height: 100px;
     margin-top: -8px;
     margin-left: -8px;
@@ -80,4 +81,22 @@ content {
     float: left ;
     background-color: green;
 }
+
+#clear {
+    clear: both;
+}
+
+footer {
+    background-color: darkblue;
+    width: 1897px;
+    height: 100px;
+    padding-top: 50px;
+    color: white;
+}
+
+footer p{
+    font-size: large;
+    margin-left: 850px;
+}
+
 
