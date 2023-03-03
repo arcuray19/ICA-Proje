@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(133, 124, 250);
+    padding-top: 0px;
+}
+
+header {
+    background-color: rgb(158, 133, 100);
+    padding: 15px;
+    width: 1890px;
+    height: 100px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+#logo {
+    float: left;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 15px;
+    margin-right: 400px;
+    background-color: blue;
+    color: white;
+}
+
+nav {
+    margin-top: 32.5px;
+    
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #f7c2af;
+    font-size: xx-large;
+    margin: 2px;
+}
+
+nav a:hover {
+    background-color: yellowgreen;
+    background-blend-mode: initial;
+    color: rgb(0, 0, 0);
+
+}
