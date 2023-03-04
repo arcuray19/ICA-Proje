@@ -4,30 +4,112 @@ body {
     margin: 0px;
 }
 
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+}
+
 header {
     background-color: rgb(158, 133, 100);
     padding: 15px;
-    width: 1875px;
-    height: 100px;
+    width: 1475px;
+    height: 200px;
     margin-top: -8px;
     margin-left: -8px;
 }
 
-#logo {
+#homeIco {
+    height: 50px;
+    width: 50px;
+}
+
+#libaryIco {
+    height: 50px;
+    width: 50px;
+}
+
+#galleryIco {
+    height: 50px;
+    width: 50px;
+}
+
+#aboutIco {
+    height: 50px;
+    width: 50x;
+}
+
+#contactIco {
+    height: 50px;
+    width: 50px;
+}
+
+nav {
+    width: 550px;
+    height: 110px;
+    padding: 5px
+}
+
+nav ul {
+    display: flex;
+}
+   
+:root {
+    --body-background-color: #82a8ee;
+}
+   
+.navigation {
+    background-color: #f0f6ff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+   
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+   
+.navigation a {
+    display: block;
+    padding: 1.5rem;
+    position: relative;
+    text-decoration: none;
+}
+   
+.navigation a:focus::after,
+.navigation a:hover::after {
+    opacity: 1;
+}
+   
+.navigation a::after {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+
+ #logo {
     float: left;
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 42.5px;
     margin-bottom: 15px;
-    margin-right: 400px;
+    margin-right: 200px;
     background-color: blue;
     color: white;
-}
+} 
 
 nav {
     margin-top: 32.5px;
-    
-    
 }
 
 nav a{
@@ -42,8 +124,7 @@ nav a{
 }
 
 nav a:hover {
-    background-color: yellowgreen;
-    color: rgb(0, 0, 0);
+    background-color: rgb(164, 240, 88);
 }
 
 content {
@@ -82,7 +163,7 @@ content {
     background-color: green;
 }
 
-#clear {
+.clear {
     clear: both;
 }
 
