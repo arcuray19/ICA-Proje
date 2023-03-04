@@ -11,12 +11,53 @@ body {
 }
 
 header {
-    background-color: rgb(158, 133, 100);
+    background-color: rgb(46, 10, 177) color initial;
+
     padding: 15px;
-    width: 1475px;
-    height: 200px;
+    width: 1401px;
+    height: 150px;
     margin-top: -8px;
     margin-left: -8px;
+}
+
+
+
+ #logo {
+    float: left;
+    padding: 10px;
+    padding-left: 16.5px;
+    padding-right: 16.5px;
+    margin-top: 25px;
+    margin-right: 150px;
+    background-color: rgb(123, 123, 252);
+    color: white;
+    border-radius: 10px;
+} 
+
+nav {
+    width: 580px;
+    height: 110px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #f7c2af;
+    font-size: xx-large;
+    margin: 2px;
+}
+
+nav a:hover {
+    background-color: rgb(164, 240, 88);
 }
 
 #homeIco {
@@ -44,46 +85,38 @@ header {
     width: 50px;
 }
 
-nav {
-    width: 550px;
-    height: 110px;
-    padding: 5px
-}
-
-nav ul {
-    display: flex;
-}
-   
 :root {
     --body-background-color: #82a8ee;
 }
-   
+
 .navigation {
     background-color: #f0f6ff;
-    border-radius: 0.25rem;
+    border-radius: 15px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
 }
-   
+
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-   
+
 .navigation a {
     display: block;
     padding: 1.5rem;
     position: relative;
     text-decoration: none;
+    border-radius: 10px;
 }
-   
+
 .navigation a:focus::after,
 .navigation a:hover::after {
     opacity: 1;
+    border-radius: 10px;
 }
-   
+
 .navigation a::after {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     content: '';
@@ -96,69 +129,38 @@ nav ul {
     width: 100%;
 }
 
- #logo {
-    float: left;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 42.5px;
-    margin-bottom: 15px;
-    margin-right: 200px;
-    background-color: blue;
-    color: white;
-} 
-
-nav {
-    margin-top: 32.5px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-color: #f7c2af;
-    font-size: xx-large;
-    margin: 2px;
-}
-
-nav a:hover {
-    background-color: rgb(164, 240, 88);
-}
-
 content {
-    width: 1890px;
-    height: 2500px;
+    width: 1417.5px;
+    height: 1875px;
 }
 
 #slaytEkrani {
-    width: 1600px;
-    height: 750px;
+    width: 1200px;
+    height: 562px;
     background-color: #f7c2af;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 12.5px;
 }
 
 #kutuphaneKutulari {
-    width: 1366px;
-    margin-left: 228px;
-    margin-right: 228px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 25px;
+    width: 1024,5px;
+    margin-left: 171px;
+    margin-right: 171px;
+    margin-top: 12.5px;
+    margin-bottom: 15.5px;
+    padding: 44px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 3.75px;
     float: left;
     background-color: grey;
 }
 
 .kutu {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     border-style: solid;
-    border-width: 3px;
-    margin: 25px;
+    border-width: 2.25px;
+    margin: 12.5px;
     float: left ;
     background-color: green;
 }
@@ -168,16 +170,16 @@ content {
 }
 
 footer {
-    background-color: darkblue;
-    width: 1897px;
-    height: 100px;
-    padding-top: 50px;
+    background-color: rgb(46, 10, 177);
+    width: 1422px;
+    height: 75px;
+    padding-top: 37.5px;
     color: white;
 }
 
 footer p{
     font-size: large;
-    margin-left: 850px;
+    margin-left: 600px;
 }
 
 
