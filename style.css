@@ -5,16 +5,13 @@ body {
     padding: 0px;
     margin: 0px;
     scrollbar-color: #000000;
+    width:100%;
+    min-width:1000px;
+    height:auto;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
-}
-
-.WebContainer{
-    width:100%;
-    min-width:1000px;
-    height:auto;
 }
 
 header {
@@ -59,7 +56,7 @@ header {
 #logo h1 {
     font-size: 10px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic M         edium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 1px;
     color: #000000;
 }
@@ -218,17 +215,55 @@ nav a:hover {
     margin-top: -5px;
 }
 
+/* .kayitGiris {
+    width: 100px;
+    height: 25px;
+    background-color: aqua;
+    float: right;
+    margin-bottom: 50px;
+} */
+
+
+
 content {
     width: 1417.5px;
     height: 1875px;
 }
 
-#slaytEkrani, #slaytEkrani img {
-    width: 960px;
-    height: 540px;
+#slaytEkrani {
+    width: 80%;
+    height: 550px;
     background-color: #f7c2af;
     margin: auto;
     border-radius: 10px;
+    overflow: hidden;
+    border: 4px solid;
+    box-sizing: border-box;
+}
+
+#slaytEkrani img {
+    width: 25%;
+    height: 550px;
+    background-color: #f7c2af;
+    margin: auto;
+    border-radius: 10px;
+    float: left;
+    
+}
+
+.galeri {
+    position: relative;
+    width: 400%;
+    left: 0;
+    animation: 20s slayt infinite;
+}
+
+@keyframes slayt{
+    0%{left: 0%;}
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -300%;}
 }
 
 #kutuphaneKutulari {
