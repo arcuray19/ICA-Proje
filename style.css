@@ -231,12 +231,21 @@ content {
     height: 1875px;
 }
 
+content h1 {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 0px 5px 5px #000000;
+    margin-top: 170px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #slaytEkrani {
     width: 80%;
     height: 550px;
     background-color: #f7c2af;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 40px;
+    margin-bottom: -100px;
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid white;
@@ -282,7 +291,8 @@ content {
 #kutuphaneKutulari h1 {
     text-align: center;
     color: whitesmoke;
-    text-shadow: 0px 0px 10px #000000;
+    text-shadow: 0px 5px 5px #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .kutu {
