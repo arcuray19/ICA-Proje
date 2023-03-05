@@ -1,7 +1,14 @@
+
+/* index.html CSS kodları*/
 body {
     background-color: rgb(133, 124, 250);
     padding: 0px;
     margin: 0px;
+    scrollbar-color: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .WebContainer{
@@ -13,164 +20,55 @@ body {
 header {
     background-color: rgb(46, 10, 177);
     padding: 15px;
-    width: 1401px;
-    height: 160px;
-    margin-top: -8px;
+    padding-top: 7.5px;
+    width: 1418px;
+    height: 100px;
     margin-left: -8px;
+    margin-bottom: 80px;
+    box-shadow: 2px 4px 10px 1px;
+    position: static;
+    z-index: 1;
 }
 
  #logo {
     float: left;
     padding: 10px;
     padding-left: 16.5px;
+    margin-top: 12px;
     padding-right: 16.5px;
-    margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 150px;
     background-color: rgb(255, 255, 255);
     color: white;
-    border-radius: 10px;
-    width: 130px;
-    height: 130px;
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
 } 
-
-#logoPng {
-    width: 90px;
-    height: 90px;
-    margin-left: 18px;
-    margin-bottom: -8px; 
-}
 
 #logo a {
     text-decoration: none;
 }
 
+#logoPng {
+    width: 45px;
+    height: 45px;
+    margin-left: 9px;
+    margin-bottom: -8px; 
+}
+
 #logo h1 {
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 2px;
+    margin-left: 1px;
     color: #000000;
 }
 
 nav {
-    width: 700px;
-    height: 115px;
+    width: 750px;
+    height: 57.5px;
     padding: 5px;
-    margin-top: 15px;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-color: #f7c2af;
-    font-size: xx-large;
-    margin: 2px;
-    width: 80px;
-}
-
-nav #p1 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: cursive;
-    color: #000000;
-    margin: auto;
-    margin-left: -3px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-nav #p2 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: cursive;
-    color: #000000;
-    margin: auto;
-    margin-left: -15px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-
-nav #p3 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: cursive;
-    color: #000000;
-    margin: auto;
-    margin-left: 13px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-nav #p4 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: cursive;
-    color: #000000;
-    margin: auto;
-    margin-left: -8px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-nav #p5 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: cursive;
-    color: #000000;
-    margin: auto;
-    margin-left: 10px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-nav a:hover {
-    background-color: rgb(164, 240, 88);
-}
-
-#homeIco {
-    height: 50px;
-    width: 50px;
-    margin-left: 12px;
-}
-
-#libaryIco {
-    height: 50px;
-    width: 50px;
-    margin-left: 12px;
-}
-
-#galleryIco {
-    height: 50px;
-    width: 50px;
-    margin-left: 12px;
-}
-
-#aboutIco {
-    height: 50px;
-    width: 50x;
-    margin-left: 12px;
-}
-
-#contactIco {
-    height: 50px;
-    width: 50px;
-    margin-left: 12px;
-}
-
-:root {
-    --body-background-color: #82a8ee;
-}
-
-.navigation {
+    margin-top: 20px;
     background-color: #f0f6ff;
     border-radius: 15px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -178,18 +76,31 @@ nav a:hover {
     justify-content: center;
 }
 
+nav ul {
+    display: flex;
+}
+
+nav a{
+    margin: 2px;
+    width: 80px;
+    display: block;
+    padding: 11px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 100px;
+}
+
+:root {
+    --body-background-color: #82a8ee;
+}
+
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.navigation a {
-    display: block;
-    padding: 1.5rem;
-    position: relative;
-    text-decoration: none;
-    border-radius: 10px;
 }
 
 .navigation a:focus::after,
@@ -206,8 +117,105 @@ nav a:hover {
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
     width: 100%;
+    border-radius: 10px;
+}
+
+
+nav #p1 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: -6px;
+    margin-bottom: -10px;
+}
+
+nav #p2 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 3px;
+    margin-top: -6px;
+    margin-bottom: -10px;
+}
+
+
+nav #p3 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 25px;
+    margin-top: -6px;
+    margin-bottom: -10px;
+}
+
+nav #p4 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 9px;
+    margin-top: -6px;
+    margin-bottom: -10px;
+}
+
+nav #p5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 23px;
+    margin-top: -6px;
+    margin-bottom: -10px;
+}
+
+nav a:hover {
+    background-color: rgb(164, 240, 88);
+}
+
+#homeIco {
+    height: 25px;
+    width: 25px;
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+#libaryIco {
+    height: 25px;
+    width: 25px;
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+#galleryIco {
+    height: 25px;
+    width: 25px;
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+#aboutIco {
+    height: 25px;
+    width: 25px;
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+#contactIco {
+    height: 25px;
+    width: 25px;
+    margin-left: 35px;
+    margin-top: -5px;
 }
 
 content {
@@ -215,25 +223,22 @@ content {
     height: 1875px;
 }
 
-#slaytEkrani {
-    width: 1200px;
-    height: 562px;
+#slaytEkrani, #slaytEkrani img {
+    width: 960px;
+    height: 540px;
     background-color: #f7c2af;
     margin: auto;
-    margin-top: 12.5px;
+    border-radius: 10px;
 }
 
 #kutuphaneKutulari {
-    width: 1024,5px;
-    margin-left: 171px;
-    margin-right: 171px;
+    width: 1056px;
+    margin-left: 147px;
+    margin-right: 132px;
     margin-top: 12.5px;
     margin-bottom: 15.5px;
     padding: 44px;
-    border-style: solid;
-    border-width: 3.75px;
     float: left;
-    background-color: grey;
 }
 
 .kutu {
@@ -241,7 +246,7 @@ content {
     height: 150px;
     border-style: ridge;
     border-width: 1.5px;
-    margin: 12.5px;
+    margin: 25px;
     float: left ;
     background-color: green;
     transition: 0.5s;
@@ -263,7 +268,7 @@ content {
 
 footer {
     background-color: rgb(46, 10, 177);
-    width: 1422px;
+    width: 1439px;
     height: 75px;
     padding-top: 37.5px;
     color: white;
@@ -273,5 +278,8 @@ footer p{
     font-size: large;
     margin-left: 600px;
 }
+
+
+/* n.html CSS kodları*/
 
 
