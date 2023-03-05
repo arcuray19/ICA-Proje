@@ -23,7 +23,7 @@ header {
     margin-left: -8px;
     margin-bottom: 80px;
     box-shadow: 2px 4px 10px 1px;
-    position: static;
+    position: fixed;
     z-index: 1;
 }
 
@@ -237,7 +237,8 @@ content {
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
-    border: 4px solid;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 1px;
     box-sizing: border-box;
 }
 
@@ -276,6 +277,12 @@ content {
     float: left;
 }
 
+#kutuphaneKutulari h1 {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px #000000;
+}
+
 .kutu {
     width: 300px;
     height: 150px;
@@ -297,6 +304,80 @@ content {
     width: 300px;
     height: 150px;
 }
+
+.kutu a {
+    text-decoration: none;
+}
+
+.kutu p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -35px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+#kutup1 {
+    margin-left: 25%;
+}
+
+#kutup2 {
+    margin-left: 20%;
+}
+
+#kutup3 {
+    margin-left: 11%;
+}
+
+#kutup4 {
+    margin-left: 12%;
+}
+
+#kutup5 {
+    margin-left: 7%;
+    margin-top: -60px;
+    width: 250px;
+    text-align: center;
+}
+
+#kutup6 {
+    margin-left: 8%;
+    margin-top: -60px;
+    width: 250px;
+    text-align: center;
+}
+
+#kutup7 {
+    margin-left: 18%;
+}
+
+#kutup8 {
+    margin-left: 8%;
+    margin-top: -60px;
+    width: 250px;
+    text-align: center;
+}
+
+#kutup9 {
+    margin-left: 20%;
+}
+
+#kutup10 {
+    margin-left: 15%;
+}
+
+#kutup11 {
+    margin-left: 18%;
+}
+
+#kutup12 {
+    margin-left: 6%;
+    width: 250px;
+    text-align: center;
+}
+
 .clear {
     clear: both;
 }
