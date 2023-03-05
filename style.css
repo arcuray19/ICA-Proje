@@ -11,32 +11,51 @@ body {
 }
 
 header {
-    background-color: rgb(46, 10, 177) color initial;
-
+    background-color: rgb(46, 10, 177);
     padding: 15px;
     width: 1401px;
-    height: 150px;
+    height: 160px;
     margin-top: -8px;
     margin-left: -8px;
 }
-
-
 
  #logo {
     float: left;
     padding: 10px;
     padding-left: 16.5px;
     padding-right: 16.5px;
-    margin-top: 25px;
+    margin-top: 8px;
+    margin-left: 10px;
     margin-right: 150px;
-    background-color: rgb(123, 123, 252);
+    background-color: rgb(255, 255, 255);
     color: white;
     border-radius: 10px;
+    width: 130px;
+    height: 130px;
 } 
 
+#logoPng {
+    width: 90px;
+    height: 90px;
+    margin-left: 18px;
+    margin-bottom: -8px; 
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2px;
+    color: #000000;
+}
+
 nav {
-    width: 580px;
-    height: 110px;
+    width: 700px;
+    height: 115px;
     padding: 5px;
     margin-top: 15px;
 }
@@ -54,6 +73,63 @@ nav a{
     border-color: #f7c2af;
     font-size: xx-large;
     margin: 2px;
+    width: 80px;
+}
+
+nav #p1 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: -3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+nav #p2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: -15px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+
+nav #p3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 13px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+nav #p4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: -8px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+nav #p5 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 nav a:hover {
@@ -63,26 +139,31 @@ nav a:hover {
 #homeIco {
     height: 50px;
     width: 50px;
+    margin-left: 12px;
 }
 
 #libaryIco {
     height: 50px;
     width: 50px;
+    margin-left: 12px;
 }
 
 #galleryIco {
     height: 50px;
     width: 50px;
+    margin-left: 12px;
 }
 
 #aboutIco {
     height: 50px;
     width: 50x;
+    margin-left: 12px;
 }
 
 #contactIco {
     height: 50px;
     width: 50px;
+    margin-left: 12px;
 }
 
 :root {
@@ -158,13 +239,24 @@ content {
 .kutu {
     width: 300px;
     height: 150px;
-    border-style: solid;
-    border-width: 2.25px;
+    border-style: ridge;
+    border-width: 1.5px;
     margin: 12.5px;
     float: left ;
     background-color: green;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 0.1px
 }
 
+.kutu:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+.kutu img {
+    width: 300px;
+    height: 150px;
+}
 .clear {
     clear: both;
 }
