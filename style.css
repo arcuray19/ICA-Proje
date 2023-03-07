@@ -1,7 +1,7 @@
 
 /* index.html CSS kodları*/
 body {
-    background-color: rgb(190, 189, 209);
+    background-color: rgb(204, 203, 252);
     padding: 0px;
     margin: 0px;
     scrollbar-color: #000000;
@@ -38,16 +38,24 @@ header {
     float: left;
     padding: 10px;
     padding-left: 16.5px;
-    margin-top: 12px;
+    margin-top: 9.5px;
     padding-right: 16.5px;
-    margin-left: 20px;
-    margin-right: 150px;
+    margin-left: 30px;
+    margin-right: 80px;
     background-color: rgb(255, 255, 255);
     color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
     border-radius: 40px;
+    background-color: rgb(255, 255, 255);
     width: 65px;
     height: 65px;
 } 
+
+#logo:hover {
+    background-color: rgb(204, 203, 252);
+}
 
 #logo a {
     text-decoration: none;
@@ -74,11 +82,13 @@ nav {
     height: 57.5px;
     padding: 5px;
     margin-top: 20px;
+    margin-right: 60px;
     background-color: #f0f6ff;
     border-radius: 15px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
+    float: left;
 }
 
 nav ul {
@@ -185,7 +195,7 @@ nav #p5 {
 }
 
 nav a:hover {
-    background-color: rgb(164, 240, 88);
+    background-color: rgb(204, 203, 252);
 }
 
 #homeIco {
@@ -223,6 +233,41 @@ nav a:hover {
     margin-top: -5px;
 }
 
+#girisKayitArama {
+    margin-top: 38px;
+}
+
+.button, #sayfadaAra {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    box-shadow: 0px 0px 5px 0.5px #000000;
+}
+
+#kayitOl {
+    margin-left: 5px;
+}
+
+.button {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button:hover {
+    background-color: rgb(204, 203, 252);
+    color: #000000;
+}
+
+#sayfadaAra {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 7px 0.5px #000000;
+}
+
 content {
     width: 1417.5px;
     height: 1875px;
@@ -231,18 +276,18 @@ content {
 content h1 {
     text-align: center;
     color: whitesmoke;
-    text-shadow: 0px 5px 5px #000000;
+    text-shadow: 0px 3px 5px #000000;
     margin-top: 170px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #slaytEkrani {
     width: 80%;
-    height: 550px;
+    height: 480px;
     background-color: #f7c2af;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid white;
@@ -260,7 +305,7 @@ content h1 {
     
 }
 
-.galeri {
+#galeri {
     position: relative;
     width: 400%;
     left: 0;
@@ -275,11 +320,15 @@ content h1 {
     80%{left: -300%;}
 }
 
+#degerGorenKutuphaneler {
+    height: 100px;
+}
+
 #kutuphaneKutulari {
     width: 1056px;
     margin-left: 147px;
     margin-right: 132px;
-    margin-top: 12.5px;
+    margin-top: -35px;
     margin-bottom: 15.5px;
     padding: 44px;
     float: left;
