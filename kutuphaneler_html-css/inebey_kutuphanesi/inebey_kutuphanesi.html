@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr TR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kütüphanem</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ataturk_kitapligis.css'>
+</head>
+
+<body id="WebContainer">
+    <header>
+        <div id="logo">
+            <a href="../../index.html">
+                <img id="logoPng" src="../../iconlar/logo.png" alt="Logo">
+            <h1>KÜTÜPHANEM</h1>
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a class="iconlar" href="../../index.html">
+                        <img id="homeIco" src="../../iconlar/home.png" alt="Home Icon"><br>
+                        <p id="p1">Anasayfa</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="iconlar" href="../../libary.html">
+                        <img id="libaryIco" src="../../iconlar/libary.png" alt="Libary Icon"><br>
+                        <p id="p2">Kütüphaneler</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="iconlar" href="../../gallery.html">
+                        <img id="galleryIco" src="../../iconlar/gallary.png" alt="Gallart Icon"><br>
+                        <p id="p3">Galeri</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="iconlar" href="../../abuot-us.html">
+                        <img id="aboutIco" src="../../iconlar/about-us.png" alt="About Icon"><br>
+                        <p id="p4">Hakkımızda</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="iconlar" href="../../contact.html">
+                        <img id="contactIco" src="../../iconlar/contact.png" alt="Contact Icon"><br>
+                        <p id="p5">İletişim</p>
+                    </a>
+                </li>
+            </ul>
+          </nav>        
+    </header>
+
+        <!-- Metin, görsel ve diğer içeriklerileri barındıran div yapısı. -->
+        <div id="icerik">
+            <h1> ATATÜRK KİTAPLIĞI </h1>
+            <img width="500px" height="280px" src="../../kutuphaneler/ataturk_kitapligi.jpg" >
+            <p> Atatürk Kitaplığı, İstanbul'un Taksim semtinde Mete Caddesi üzerinde İstanbul Büyükşehir Belediyesi Kütüphane ve Müzeler Müdürlüğü'ne bağlı, halka ve araştırmacılara hizmet veren bir kitaplıktır.
+            1924 yılında belediye kütüphanesi olarak oluşturulan kitaplık, Cumhuriyet döneminin ilk kütüphanelerindendir. 1981 yılından beri Taksim’deki binada hizmet veren kitaplık, 7 gün 24 saat açıktır. 2007 yılında ve 2011 yılında Türkiye'nin en iyi kütüphanesi seçilmiştir</p>
+            <div class="Temizle"></div>
+            
+            <div id="altbilgi">
+                <div id="altbilgi_imkanlar">
+                    <h3>İMKANLAR</h3>
+                    <ul>
+                        <li> Bilgisayarlı masa mevcut. </li>
+                        <li> Pazartesi günleri çorba dağıtımı. </li>
+                        <li> Geniş bir arşiv. </li>
+                        <li> 7/24 açık.</li>
+                    </ul>
+                </div>
+                
+            <section id="altbilgi_doluluk">
+                <h3>ANLIK DOLULUK ORANI:</h3>
+                <div>
+                    <canvas id="canvas" width="400" height="300">
+                    Eğer tarayıcınızı HTML5'i desteklemiyorsa bu kısım görünecek.
+                    </canvas>
+                </div>
+                 
+                    <script type="text/javascript">
+                    //renkler, grafiğimiz 5 parçadan oluşacakı için 5 rengi myColor dizisinde saklıyoruz.
+                    var myColor = ["#C02942","#542437"];
+                 
+                    //pasta grafiği oluşturacak veri dizisi
+                    var myData = [30,70];
+                 
+                    function getTotal(){
+                    var myTotal = 0;
+                    for (var j = 0; j < myData.length; j++) {
+                    myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
+                    }
+                    return myTotal;
+                    }
+                 
+                 
+                    //ÇİZME FONKSİYONU
+                    function plotData() {
+                
+                    var canvas;
+                    //tuval nesnesi tanımlanıyor
+                
+                    var ctx;
+                    var lastend = 0;
+                    var myTotal = getTotal();
+                 
+                    canvas = document.getElementById("canvas");
+                
+                    //2 boyutlu grafik
+                    ctx = canvas.getContext("2d");
+                
+                    //çizim bölgesi temizleniyor.
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                 
+                    //Döngü ile grafik verilerinin olduğu myData dizisi elemanlarına teker teker ulaşılıyor.
+                    for (var i = 0; i < myData.length; i++) {
+                
+                    //myColor dizisinden her veri elemanına karşı gelen renk seçiliyor.
+                    ctx.fillStyle = myColor[i];
+                    ctx.beginPath();
+                
+                    //moveTo ile istenilen konuma odaklanılıyor.
+                    ctx.moveTo(200,150);
+                 
+                    //Matematikteki PI sayısı kullanılarak açılar çiziliyor.
+                    //arc fonksiyonu açı, line ise çizgi çizmek için kullanılıyor.
+                    ctx.arc(200,150,150,lastend,lastend+ (Math.PI*2*(myData[i]/myTotal)),false);
+                    ctx.lineTo(200,150);
+                
+                    ctx.fill();
+                    lastend += Math.PI*2*(myData[i]/myTotal);
+                
+                    //her bir açının çiziminden sonra son kalınan nokta lastend oluyor
+                    //döngünün sonraki çevriminde kalınan yerden devam ediliyor.
+                    }
+                    }
+                 
+                    plotData();
+                    </script>
+                </section>
+            </div>
+                
+
+        </div>
+
+
+        </div>
+        <footer>
+            <p>Tüm hakları saklıdır. &nbsp; &copy; 2023</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 
 /* index.html CSS kodları*/
 body {
-    background-color: rgb(190, 189, 209);
+    background-color: rgb(133, 124, 250);
     padding: 0px;
     margin: 0px;
     scrollbar-color: #000000;
@@ -223,142 +223,70 @@ nav a:hover {
     margin-top: -5px;
 }
 
-content {
-    width: 1417.5px;
-    height: 1875px;
-}
-
-content h1 {
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 0px 5px 5px #000000;
-    margin-top: 170px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#slaytEkrani {
-    width: 80%;
-    height: 550px;
-    background-color: #f7c2af;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: -100px;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px 1px;
-    box-sizing: border-box;
-}
-
-#slaytEkrani img {
-    width: 25%;
-    height: 550px;
-    background-color: #f7c2af;
-    margin: auto;
-    border-radius: 10px;
-    float: left;
-    
-}
-
-.galeri {
-    position: relative;
-    width: 400%;
-    left: 0;
-    animation: 20s slayt infinite;
-}
-
-@keyframes slayt{
-    0%{left: 0%;}
-    20%{left: -100%;}
-    40%{left: -200%;}
-    60%{left: -300%;}
-    80%{left: -300%;}
-}
-
-#kutuphaneKutulari {
-    width: 1056px;
-    margin-left: 147px;
-    margin-right: 132px;
-    margin-top: 12.5px;
-    margin-bottom: 15.5px;
-    padding: 44px;
-    float: left;
-}
-
-#kutuphaneKutulari h1 {
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 0px 5px 5px #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.kutu {
-    width: 300px;
-    height: 150px;
-    border-style: ridge;
-    border-width: 1.5px;
-    margin: 25px;
-    float: left ;
-    background-color: green;
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px 0.1px;
-    border-radius: 10px;
-}
-
-.kutu img {
-    border-radius: 10px;
-}
-
-.kutu:hover {
-    transform: scale(1.05);
-    overflow: hidden;
-}
-
-.kutu img {
-    width: 300px;
-    height: 150px;
-}
-
-.kutu a {
-    text-decoration: none;
-}
-
-.kutu p {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -35px;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
-    text-align: center;
-
-}
-
-#kutu-p5 {
-    margin-left: 7%;
-    margin-top: -60px;
-    width: 250px;
-    text-align: center;
-}
-
-#kutu-p6 {
-    margin-left: 8%;
-    margin-top: -60px;
-    width: 250px;
-    text-align: center;
-}
-
-#kutu-p8 {
-    margin-left: 8%;
-    margin-top: -60px;
-    width: 250px;
-    text-align: center;
-}
-
-.clear {
+/* ataturk_kitapligi.html kodları */
+.Temizle{
     clear: both;
 }
+
+#baslik{
+    margin-left: 50px
+
+}
+
+#altbilgi{
+    margin-left: 50px;
+}
+
+#icerik{
+    background-color: rgb(225, 176, 158);
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    width: 1200px;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px 1px
+}
+
+#icerik img {
+    border-style: solid;
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px #000000;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+#icerik p {
+    text-align:justify;
+    margin-right: 30px;
+}
+
+#icerik h1 {
+    font-style: italic;
+    margin-left: 40px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+#icerik h3 {
+    font-style: italic;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+#icerik h1, h3, p, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#altbilgi_imkanlar {
+    float: left;
+    margin-right: 300px ;
+    margin-top: -15px;
+}
+/* ataturk_kitapligi.html kodları */
 
 footer {
     background-color: rgb(46, 10, 177);
@@ -376,8 +304,3 @@ footer p{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
 }
-
-
-/* n.html CSS kodları*/
-
-
