@@ -1,7 +1,7 @@
 
 /* index.html CSS kodları*/
 body {
-    background-color: rgb(133, 124, 250);
+    background-color: rgb(204, 203, 252);
     padding: 0px;
     margin: 0px;
     scrollbar-color: #000000;
@@ -238,7 +238,7 @@ nav a:hover {
 }
 
 #icerik{
-    background-color: rgb(225, 176, 158);
+    background-color: rgb(226, 211, 205);
     border-radius: 15px;
     padding: 20px;
     margin: auto;
