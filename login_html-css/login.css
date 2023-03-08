@@ -105,10 +105,6 @@ nav a{
     width: 100px;
 }
 
-:root {
-    --body-background-color: #82a8ee;
-}
-
 .navigation ul {
     list-style: none;
     margin: 0;
@@ -268,142 +264,68 @@ nav a:hover {
 
 content {
     width: 100%;
+    height: 1000px;
 }
 
-content h1 {
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 0px 3px 5px #000000;
-    margin-top: 170px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#slaytEkrani {
-    width: 80%;
-    height: 480px;
-    background-color: #f7c2af;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: -150px;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid white;
+#form {
+    width: 30%;
+    height: 250px;
+    background-color: rgb(46, 10, 177);
+    margin-top: 19.8%;
+    margin-bottom: 12.5%;
+    margin-left: 32.5%;
+    margin-right: 30%;
+    padding: 2%;
+    border-radius: 3%;
+    border-style: solid;
+    border-width: 1px;
     box-shadow: 0px 0px 10px 1px;
-    box-sizing: border-box;
 }
 
-#slaytEkrani img {
-    width: 25%;
-    height: 550px;
-    background-color: #f7c2af;
-    margin: auto;
-    border-radius: 10px;
-    float: left;
-    
-}
-
-#galeri {
-    position: relative;
-    width: 400%;
-    left: 0;
-    animation: 20s slayt infinite;
-}
-
-@keyframes slayt{
-    0%{left: 0%;}
-    20%{left: -100%;}
-    40%{left: -200%;}
-    60%{left: -300%;}
-    80%{left: -300%;}
-}
-
-#degerGorenKutuphaneler {
-    height: 100px;
-}
-
-#kutuphaneKutulari {
-    width: 80%;
-    margin-left: 7.8%;
-    margin-top: -3.9%;
-    margin-bottom: 15.5px;
-    padding: 3.05%;
-    float: left;
-}
-
-#kutuphaneKutulari h1 {
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 0px 5px 5px #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.kutu {
-    width: 28.4%;
-    height: 150px;
-    border-style: ridge;
-    border-width: 1.5px;
-    margin: 25px;
-    float: left ;
-    background-color: green;
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px 0.1px;
-    border-radius: 10px;
-}
-
-.kutu img {
-    border-radius: 10px;
-}
-
-.kutu:hover {
-    transform: scale(1.05);
-    overflow: hidden;
-}
-
-.kutu img {
+#formElemanlari {
     width: 100%;
-    height: 100%;
+    margin-left: 22%;
+    margin-top: 4.9%;
 }
 
-.kutu a {
-    text-decoration: none;
-}
-
-.kutu p {
-    font-size: 20px;
-    font-weight: bold;
+#form p {
     color: white;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -35px;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
-    text-align: center;
-
+    margin-bottom: -0.1%;
+    margin-left: 2.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 
-#kutu-p5 {
-    margin-left: 12%;
-    margin-top: -60px;
-    width: 250px;
-    text-align: center;
+#kullanici_adi, #sifre {
+    width: 50%;
+    height: 25px;
+    padding-left: 3%;
+    margin: 1%;
+    border-style: solid;
+    border-radius: 20px;
 }
 
-#kutu-p6 {
-    margin-left: 12%;
-    margin-top: -60px;
-    width: 250px;
-    text-align: center;
+#giris_yap {
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 7%;
+    margin-left: 18%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #82a8ee;
+    box-shadow: 0px 0px 15px 1px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: cursive ;
+    font-weight: bold;
 }
 
-#kutu-p8 {
-    margin-left: 12%;
-    margin-top: -60px;
-    width: 250px;
-    text-align: center;
+#giris_yap:hover {
+    background-color: #82a8ee;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #82a8ee;
 }
 
-.clear {
-    clear: both;
-}
 
 footer {
     background-color: rgb(46, 10, 177);
@@ -413,6 +335,7 @@ footer {
     box-shadow: 0px 0px 10px 1px black;
     padding-top: 1px;
     padding-bottom: 10px;
+    margin-bottom: -30%;
 }
 
 footer p{
