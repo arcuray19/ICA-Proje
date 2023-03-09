@@ -58,10 +58,11 @@
     </header>
         <!-- Metin, görsel ve diğer içeriklerileri barındıran div yapısı. -->
         <div id="icerik">
-            <h1> ATATÜRK KİTAPLIĞI </h1>
-            <img width="500px" height="280px" src="../../kutuphaneler_img/ataturk_kitapligi.jpg" >
-            <p> Atatürk Kitaplığı, İstanbul'un Taksim semtinde Mete Caddesi üzerinde İstanbul Büyükşehir Belediyesi Kütüphane ve Müzeler Müdürlüğü'ne bağlı, halka ve araştırmacılara hizmet veren bir kitaplıktır.
-            1924 yılında belediye kütüphanesi olarak oluşturulan kitaplık, Cumhuriyet döneminin ilk kütüphanelerindendir. 1981 yılından beri Taksim’deki binada hizmet veren kitaplık, 7 gün 24 saat açıktır. 2007 yılında ve 2011 yılında Türkiye'nin en iyi kütüphanesi seçilmiştir</p>
+            <h1> SALT GALATA </h1>
+            <img width="500px" height="280px" src="../../kutuphaneler_img/saltGalata_kutuphanesi.jpg" >
+            <p>Garanti BBVA tarafından 2011 yılında kurulan Salt, yenilikçi programlarıyla ziyaretçi ve kullanıcılarına özgür bir karşılaşma, araştırma ve ifade alanı sunan bir kültür kurumudur.
+                Salt’ın programları sergi, yayın, dijital proje, konuşma, konferans, film gösterimi, performans ve atölye çalışmalarından oluşur.
+                Farklı disiplinler arasındaki kesişim ve etkileşimleri araştıran Salt, sanat, mimarlık ve tasarım ile toplumsal ve ekonomik tarihe odaklanır; geçmişle bugün arasındaki diyaloğu beslemeyi, günümüz kültürünü yeni yaklaşım ve yorumlarla ele almayı ve bu yolla bilgi üretimini desteklemeyi amaçlar.</p>
             <div class="Temizle"></div>
             
             <div id="altbilgi">
@@ -74,85 +75,80 @@
                         <li> 7/24 açık.</li>
                     </ul>
                 </div>
-                
-            <section id="altbilgi_doluluk">
+               <section id="altbilgi_doluluk">
                 <h3>ANLIK DOLULUK ORANI:</h3>
-                <div>
-                    <canvas id="canvas" width="400" height="300">
-                    Eğer tarayıcınızı HTML5'i desteklemiyorsa bu kısım görünecek.
-                    </canvas>
-                </div>
-                 
+                    <div>
+                        <canvas id="canvas" width="400" height="300">
+                        Eğer tarayıcınızı HTML5'i desteklemiyorsa bu kısım görünecek.
+                        </canvas>
+                    </div>
+                     
                     <script type="text/javascript">
-                    //renkler, grafiğimiz 5 parçadan oluşacakı için 5 rengi myColor dizisinde saklıyoruz.
-                    var myColor = ["#C02942","#542437"];
-                 
-                    //pasta grafiği oluşturacak veri dizisi
-                    var myData = [30,70];
-                 
-                    function getTotal(){
-                    var myTotal = 0;
-                    for (var j = 0; j < myData.length; j++) {
-                    myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
-                    }
-                    return myTotal;
-                    }
-                 
-                 
-                    //ÇİZME FONKSİYONU
-                    function plotData() {
-                
-                    var canvas;
-                    //tuval nesnesi tanımlanıyor
-                
-                    var ctx;
-                    var lastend = 0;
-                    var myTotal = getTotal();
-                 
-                    canvas = document.getElementById("canvas");
-                
-                    //2 boyutlu grafik
-                    ctx = canvas.getContext("2d");
-                
-                    //çizim bölgesi temizleniyor.
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                 
-                    //Döngü ile grafik verilerinin olduğu myData dizisi elemanlarına teker teker ulaşılıyor.
-                    for (var i = 0; i < myData.length; i++) {
-                
-                    //myColor dizisinden her veri elemanına karşı gelen renk seçiliyor.
-                    ctx.fillStyle = myColor[i];
-                    ctx.beginPath();
-                
-                    //moveTo ile istenilen konuma odaklanılıyor.
-                    ctx.moveTo(200,150);
-                 
-                    //Matematikteki PI sayısı kullanılarak açılar çiziliyor.
-                    //arc fonksiyonu açı, line ise çizgi çizmek için kullanılıyor.
-                    ctx.arc(200,150,150,lastend,lastend+ (Math.PI*2*(myData[i]/myTotal)),false);
-                    ctx.lineTo(200,150);
-                
-                    ctx.fill();
-                    lastend += Math.PI*2*(myData[i]/myTotal);
-                
-                    //her bir açının çiziminden sonra son kalınan nokta lastend oluyor
-                    //döngünün sonraki çevriminde kalınan yerden devam ediliyor.
-                    }
-                    }
-                 
-                    plotData();
-                    </script>
+                        //renkler, grafiğimiz 5 parçadan oluşacakı için 5 rengi myColor dizisinde saklıyoruz.
+                        var myColor = ["#C02942","#542437"];
+                         
+                        //pasta grafiği oluşturacak veri dizisi
+                        var myData = [60,40];
+                         
+                        function getTotal(){
+                        var myTotal = 0;
+                        for (var j = 0; j < myData.length; j++) {
+                        myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
+                        }
+                        return myTotal;
+                        }
+                         
+                         
+                         //ÇİZME FONKSİYONU
+                        function plotData() {
+                        
+                        var canvas;
+                        //tuval nesnesi tanımlanıyor
+                        
+                        var ctx;
+                        var lastend = 0;
+                        var myTotal = getTotal();
+                         
+                        canvas = document.getElementById("canvas");
+                        
+                        //2 boyutlu grafik
+                        ctx = canvas.getContext("2d");
+                        
+                        //çizim bölgesi temizleniyor.
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                         
+                        //Döngü ile grafik verilerinin olduğu myData dizisi elemanlarına teker teker ulaşılıyor.
+                        for (var i = 0; i < myData.length; i++) {
+                        
+                        //myColor dizisinden her veri elemanına karşı gelen renk seçiliyor.
+                        ctx.fillStyle = myColor[i];
+                        ctx.beginPath();
+                        
+                        //moveTo ile istenilen konuma odaklanılıyor.
+                        ctx.moveTo(200,150);
+                         
+                        //Matematikteki PI sayısı kullanılarak açılar çiziliyor.
+                        //arc fonksiyonu açı, line ise çizgi çizmek için kullanılıyor.
+                        ctx.arc(200,150,150,lastend,lastend+ (Math.PI*2*(myData[i]/myTotal)),false);
+                        ctx.lineTo(200,150);
+                        
+                        ctx.fill();
+                        lastend += Math.PI*2*(myData[i]/myTotal);
+                        
+                        //her bir açının çiziminden sonra son kalınan nokta lastend oluyor
+                        //döngünün sonraki çevriminde kalınan yerden devam ediliyor.
+                        }
+                        }
+                         
+                        plotData();
+                         
+                        </script>
                 </section>
             </div>
-                
-
         </div>
-
-
-        </div>
-        <footer>
-            <p>Tüm hakları saklıdır. &nbsp; &copy; 2023</p>
-        </footer>
-    </div>
+        
+    <footer>
+    <p>Tüm hakları saklıdır. &nbsp; &copy; 2023</p>
+    </footer>
 </body>
 </html>
