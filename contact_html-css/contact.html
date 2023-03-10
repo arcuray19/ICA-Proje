@@ -5,14 +5,14 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Kütüphanem</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='register.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
 </head>
 
 <body id="WebContainer">
     <header>
         <div id="logo">
             <a href="../index.html">
-                <img id="logoPng" src="../iconlar/logo.png" alt="">
+                <img id="logoPng" src="../iconlar/logo.png" alt="Logo">
             <h1>KÜTÜPHANEM</h1>
             </a>
         </div>
@@ -49,30 +49,27 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
         <div id="girisKayitArama">
-            <a href="../login_html-css/login.html"><input type="submit" value="GİRİŞ YAP" class="button" id="giris_yap" name="kayit"></a>
+            <a href="../login_html-css\login.html"><input type="submit" value="GİRİŞ YAP" class="button" id="girisYap" name="giris"></a>
+            <a href="../register_html-css/register.html"><input type="submit" value="KAYIT OL" class="button" id="kayitOl" name="kayit"></a>
             <input type="search" placeholder="Ara..." id="sayfadaAra" name="ara">
-        </div>
+        </div>       
     </header>
-    <content>
-        <div id="form">
-            <div id="formElemanlari">
-                <p>Kullanıcı Adı:</p>
-                <input type="text" name="kullaniciAdi" id="kullanici_adi" placeholder="Kullanıcı adınızı girin..."><br>
-                <p>Şifre:</p>
-                <input type="password" name="parola" id="sifre" placeholder="Şifrenizi girin..."><br>
-                <p>E-posta:</p>
-                <input type="email" name="eMail" id="e_posta" placeholder="E-posta adresinizi girin..."><br>
-                <a href="register_after_html-css/register_index.html"><input type="submit" name="kayit" value="KAYIT" id="kayit_ol"></a>
-            </div>
-        </div>
-    </content>
-    <div class="clear">
+        <!-- Metin, görsel ve diğer içeriklerileri barındıran div yapısı. -->
+        <div id="icerik">
+            <h1> İLETİŞİM </h1>
+            <ul>
+                <li><b>Tel: </b><a href="telto:0212000000">0212 000 000</a></li>
+                <li><b>Mail: </b><a href="mailto:kutuphanem@outlook.com">kutuphanem@outlook.com</a></li>
+                <li><b>Adres: </b>İstanbul Bağcılar Merkez Mah. 673. Sokak No: 30<a href=""></a></li>
 
-    </div>
+            </ul>
+            <div class="Temizle"></div>
+        </div>
+        
     <footer>
-        <p>Tüm hakları saklıdır. &nbsp; &copy; 2023</p>
+    <p>Tüm hakları saklıdır. &nbsp; &copy; 2023</p>
     </footer>
 </body>
 </html>
