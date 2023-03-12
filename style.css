@@ -50,10 +50,6 @@ header {
     height: 65px;
 } 
 
-#logo:hover {
-    background-color: rgb(204, 203, 252);
-}
-
 #logo a {
     text-decoration: none;
 }
@@ -289,28 +285,27 @@ content h1 {
 }
 
 #slaytEkrani img {
-    width: 25%;
+    width: 11.1%;
     height: 550px;
     background-color: #f7c2af;
     margin: auto;
     border-radius: 10px;
     float: left;
-    
 }
 
 #galeri {
     position: relative;
-    width: 400%;
+    width: 900%;
     left: 0;
-    animation: 20s slayt infinite;
+    animation: 30s slayt infinite;
 }
 
 @keyframes slayt{
-    0%{left: 0%;}
-    20%{left: -100%;}
-    40%{left: -200%;}
-    60%{left: -300%;}
-    80%{left: -300%;}
+    18%{left: -100%;}
+    36%{left: -200%;}
+    54%{left: -300%;}
+    72%{left: -400%;}
+    90%{left: -500%;}
 }
 
 #degerGorenKutuphaneler {

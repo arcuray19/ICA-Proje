@@ -53,10 +53,6 @@ header {
     height: 65px;
 } 
 
-#logo:hover {
-    background-color: rgb(204, 203, 252);
-}
-
 #logo a {
     text-decoration: none;
 }
